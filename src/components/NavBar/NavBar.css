@@ -4,19 +4,28 @@
   background-color: rgb(189, 235, 189);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  height: 20vh;
+  height: 23vh;
 }
 
 .right-nav-menu {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   justify-content: space-around;
+  height: 25vh;
   width: 25vw;
+  margin: 3em;
 }
 
 .menu-item {
   height: 5vh;
+  width: fit-content;
+}
+
+.menu-item:hover {
+  filter: invert(1)
 }
