@@ -2,8 +2,21 @@
   width: 100vw;
   height: 25vh;
   background-color: rgb(189, 235, 189);
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
   height: 20vh;
+}
+
+.right-nav-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25vw;
+}
+
+.menu-item {
+  height: 5vh;
 }
