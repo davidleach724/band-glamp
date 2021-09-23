@@ -5,6 +5,10 @@ section {
   margin: 5px;
 }
 
+section:hover {
+  transform: scale(1.2)
+}
+
 p {
   margin: 15px;
 }
