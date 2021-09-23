@@ -1,9 +1,11 @@
 import '../NavBar/NavBar.css'
+import logo from "../../images/band-glamp-logo.png"
+
 
 const NavBar = () => {
   return (
     <nav className="nav-container">
-      <h1>BAND GLAMP MOTHA FUCKAA</h1>
+      <img src={ logo } className="logo"></img>
     </nav>
   )
 }
