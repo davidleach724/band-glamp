@@ -4,7 +4,7 @@ import '../LogOn/LogOn.css'
 const LogOn = () => {
 
   return (
-    <h2>This is the log on bitchessss</h2>
+    <h2>This is the log on. Ya dig?</h2>
   )
 }
 
