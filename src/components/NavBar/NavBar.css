@@ -1,0 +1,32 @@
+.nav-container {
+  height: 25vh;
+  width: 100vw;
+  background-color: #F7E3C3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 23vh;
+  margin-left: 5vw;
+}
+
+.right-nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 25vh;
+  width: 25vw;
+  margin: 3em;
+}
+
+.menu-item {
+  height: 5vh;
+  width: fit-content;
+}
+
+.menu-item:hover {
+  filter: drop-shadow(16px 16px 20px rgb(242, 209, 209)) invert(50%);
+}
