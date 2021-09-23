@@ -1,0 +1,10 @@
+section {
+  display: flex;
+  background-color: #f7e3c3ba;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+p {
+  margin: 15px;
+}
