@@ -10,6 +10,7 @@ const App = () => {
       <NavBar />
       <Switch>
         {/* <Route exact path='/' component={ LogOn } /> */}
+        
       </Switch>
     </main>
   );
