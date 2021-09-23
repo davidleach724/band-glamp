@@ -9,7 +9,7 @@ const App = () => {
     <main className="App">
       <NavBar />
       <Switch>
-        <Route exact path='/' component={ LogOn } />
+        {/* <Route exact path='/' component={ LogOn } /> */}
       </Switch>
     </main>
   );

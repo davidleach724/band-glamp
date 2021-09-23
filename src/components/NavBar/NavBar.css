@@ -1,7 +1,7 @@
 .nav-container {
-  width: 100vw;
   height: 25vh;
-  background-color: rgb(189, 235, 189);
+  width: 100vw;
+  background-color: #F7E3C3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,6 +9,7 @@
 
 .logo {
   height: 23vh;
+  margin-left: 5vw;
 }
 
 .right-nav-menu {
@@ -27,5 +28,5 @@
 }
 
 .menu-item:hover {
-  filter: invert(1)
+  filter: drop-shadow(16px 16px 20px rgb(242, 209, 209)) invert(50%);
 }
