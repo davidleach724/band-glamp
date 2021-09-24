@@ -1,14 +1,15 @@
 import { stateList } from '../../dataFiles/userData'
 
-const StateList = () => {
-const stateListings = stateList.map(state => {
-  return (
-    <option value={state}>{state}</option>
-  )
-})
+const StateList = ({ handleLocationChange }) => {
+
+  const stateListings = stateList.map((state, i) => {
+    return (
+      <option value={state} key={i}>{state}</option>
+    )
+  })
 
   return (
-    <select>
+    <select onChange={e => handleLocationChange(e.target.value)}>
       { stateListings }
     </select>
   )

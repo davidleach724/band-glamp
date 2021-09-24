@@ -1,7 +1,20 @@
+import { useEffect, useState } from 'react'
+import { fetchData } from '../../apiCall'
 import StateList from '../StateList/StateList'
 import './AddDate.css'
 
 const AddDate = () => {
+  const [location, setLocation] = useState('')
+  const [campSites, setCampSites] = useState([])
+
+  useEffect(() => {
+    fetchData(location)
+    .then(data => setCampSites(data))
+  }, [])
+
+  const handleLocationChange = (stateAbrev) => {
+    return setLocation(stateAbrev)
+  }
 
   return (
     <form>
@@ -23,7 +36,7 @@ const AddDate = () => {
             placeholder='City'
             name='city'
             />          
-          <StateList />
+          <StateList handleLocationChange={handleLocationChange}/>
         </div>
         <div className="right-form">
         </div>
