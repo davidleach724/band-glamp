@@ -1,10 +1,27 @@
+import StateList from '../StateList/StateList'
 import './AddDate.css'
 
 const AddDate = () => {
 
+
   return (
     <form>
-      <h1>Hello, Dave</h1>
+
+
+      <input
+        type='text'
+        placeholder='Venue'
+        name='venue'
+      />
+
+      <input
+        type='text'
+        placeholder='City'
+        name='city'
+      />
+      
+      <StateList />
+
     </form>
   )
 }
