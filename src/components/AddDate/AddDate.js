@@ -6,21 +6,29 @@ const AddDate = () => {
 
   return (
     <form>
-
-
-      <input
-        type='text'
-        placeholder='Venue'
-        name='venue'
-      />
-
-      <input
-        type='text'
-        placeholder='City'
-        name='city'
-      />
-      
-      <StateList />
+      <div className="top-form">
+        <h2>Add a Date Motha Fuckaaaa</h2>
+      </div>
+      <div className="bottom-form">
+        <div className="left-form">
+          <input
+            type='date'
+            />
+          <input
+            type='text'
+            placeholder='Venue'
+            name='venue'
+            />
+          <input
+            type='text'
+            placeholder='City'
+            name='city'
+            />          
+          <StateList />
+        </div>
+        <div className="right-form">
+        </div>
+      </div>
 
     </form>
   )
