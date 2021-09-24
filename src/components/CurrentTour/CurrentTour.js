@@ -18,7 +18,7 @@ const CurrentTour = () => {
 
   return (
     <>
-      <h2>{ currentDates }</h2>
+      <div>{ currentDates }</div>
     </>
   )
 }

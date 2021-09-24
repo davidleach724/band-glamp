@@ -16,6 +16,8 @@ section:hover {
 
 p {
   color: black;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .city-state {
