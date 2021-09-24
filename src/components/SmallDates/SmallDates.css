@@ -1,8 +1,13 @@
 section {
   display: flex;
   background-color: #f7e3c3ba;
-  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  border-radius: 8px;
   margin: 5px;
+  height: 40px;
+  width: 700px;
 }
 
 section:hover {
@@ -10,6 +15,9 @@ section:hover {
 }
 
 p {
-  margin: 15px;
   color: black;
+}
+
+.city-state {
+  display: flex;
 }

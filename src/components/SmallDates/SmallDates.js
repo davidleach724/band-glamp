@@ -7,8 +7,10 @@ const SmallDates = ({ show }) => {
     <section>
       <p>{show.date}</p>
       <p>{show.venue}</p>
-      <p>{show.city}</p>
-      <p>{show.state}</p>
+      <div className="city-state">
+        <p>{show.city}, </p>
+        <p>{show.state}</p>
+      </div>
     </section>
     </Link>
   )
