@@ -1,5 +1,6 @@
 {
   "name": "band-glamp",
+  "homepage": "/currentTour/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,0 +1,23 @@
+section {
+  display: flex;
+  background-color: #f7e3c3ba;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  border-radius: 8px;
+  margin: 5px;
+  height: 40px;
+  width: 700px;
+}
+
+section:hover {
+  background-color: #f7e3c3e4;
+}
+
+p {
+  color: black;
+}
+
+.city-state {
+  display: flex;
+}
