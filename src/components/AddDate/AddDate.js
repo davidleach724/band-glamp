@@ -3,7 +3,6 @@ import './AddDate.css'
 
 const AddDate = () => {
 
-
   return (
     <form>
       <div className="top-form">

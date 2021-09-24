@@ -1,0 +1,22 @@
+form {
+  background-color: blanchedalmond;
+  height: 60vh;
+  width: 75vw;
+  margin: 10px;
+}
+
+.left-form {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+}
+
+input {
+  width: 20vw;
+  margin: 10px;
+}
+
+select {
+  width: 10vw;
+  margin: 10px;
+}
