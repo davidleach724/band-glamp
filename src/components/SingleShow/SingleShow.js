@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import './SmallDates.css'
+import './SingleShow.css'
 
-const SmallDates = ({ show }) => {
+const SingleShow = ({ show }) => {
   return (
     <Link to={`/currentTour/${show.id}`} style={{textDecoration: 'none'}}>
     <section>
@@ -16,4 +16,4 @@ const SmallDates = ({ show }) => {
   )
 }
 
-export default SmallDates
+export default SingleShow
