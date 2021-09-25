@@ -10,17 +10,21 @@ const App = () => {
   const [bookedShows, setBookedShows] = useState([])
 
   useEffect(() => {
-    setBookedShows({userMockData})
-  }, [bookedShows])
+    setBookedShows(userMockData)
+  }, [])
+
+  const updateShows = (newShow) => {
+    setBookedShows({bookedShows: {...bookedShows, ...newShow}})
+  }
 
 
   return (
     <main className="App">
       <NavBar />
       <Switch>
-        {bookedShows.userMockData &&
+        {bookedShows &&
         <Route exact path='/currentTour/' render={() => <CurrentTour userMockData={bookedShows}/>} />}
-        <Route exact path='/addDate/' component={ AddDate } />
+        <Route exact path='/addDate/' render={() => <AddDate updateShows={updateShows}/>} />
       </Switch>
     </main>
   );

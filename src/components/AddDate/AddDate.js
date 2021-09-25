@@ -7,7 +7,7 @@ import submitDate from '../../images/submit-date.png'
 import tent from '../../images/tent.png'
 import './AddDate.css'
 
-const AddDate = () => {
+const AddDate = ({updateShows}) => {
   const [location, setLocation] = useState('')
   const [campSites, setCampSites] = useState([])
 
@@ -47,7 +47,7 @@ const AddDate = () => {
             name='notes'
             className='notes'
           />
-          <img src={submitDate} className="submit-date"/>
+          <img src={submitDate} className="submit-date" onClick={() => updateShows({id: '04'})}/>
         </div>
         <div className="right-form">
           {campSites.total > 100 && <img src={tent} className="tent"/>}
