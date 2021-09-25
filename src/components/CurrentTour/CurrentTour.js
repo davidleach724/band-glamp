@@ -3,14 +3,9 @@ import { userMockData } from '../../dataFiles/userData'
 import SingleShow from '../SingleShow/SingleShow'
 import './CurrentTour.css'
 
-const CurrentTour = ({userData}) => {
-  // const [userData, setUserData] = useState([])
+const CurrentTour = ({userMockData}) => {
 
-  // useEffect(() => {
-  //   setUserData(userMockData)
-  // }, [])
-
- const currentDates = userData.map(gig => {
+ const currentDates = userMockData.userMockData.map(gig => {
    return (
     <SingleShow show={gig} />
    )

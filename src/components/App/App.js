@@ -7,18 +7,19 @@ import { userMockData } from '../../dataFiles/userData'
 import './App.css';
 
 const App = () => {
-const [bookedShows, setBookedShows] = useState([])
+  const [bookedShows, setBookedShows] = useState([])
 
-useEffect(() => {
-  setBookedShows({userMockData})
-}, [])
+  useEffect(() => {
+    setBookedShows({userMockData})
+  }, [bookedShows])
 
 
   return (
     <main className="App">
       <NavBar />
       <Switch>
-        <Route exact path='/currentTour/' render={() => <CurrentTour userData={bookedShows}/>} />
+        {bookedShows.userMockData &&
+        <Route exact path='/currentTour/' render={() => <CurrentTour userMockData={bookedShows}/>} />}
         <Route exact path='/addDate/' component={ AddDate } />
       </Switch>
     </main>
