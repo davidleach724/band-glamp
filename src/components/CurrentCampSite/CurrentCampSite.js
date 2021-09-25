@@ -5,13 +5,9 @@ const CurrentCampSite = ({currentSite}) => {
     <div>
       <img src={currentSite.images[0].url} className="camp-image"/>
       {currentSite.addresses[0] != null && 
-        <div>
-          <p>{currentSite.addresses[0].line1} </p>
-          <p>{currentSite.addresses[0].city} </p>
-          <p>{currentSite.addresses[0].state}</p>
-        </div>}
-        <p>{currentSite.description}</p>
-        <a>{currentSite.url}</a>
+          <p className="camp-address">{currentSite.addresses[0].line1} {currentSite.addresses[0].city} {currentSite.addresses[0].state}</p>}
+        <p className="camp-description">{currentSite.description}</p>
+        <a href={currentSite.url}>Website</a>
     </div>
   )
 }
