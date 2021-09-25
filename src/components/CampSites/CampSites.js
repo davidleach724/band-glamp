@@ -16,7 +16,7 @@ const CampSites = ({campProps}) => {
 
   return (
     <div>
-      {currentSite.images && <img src={currentSite.images[0].url} className="camp-image"/>}
+      {currentSite.images != null && <img src={currentSite.images[0].url} className="camp-image"/>}
       <select className="camp-list" onChange={e => handleChange(e.target.value)}>
         {campList}
       </select>
