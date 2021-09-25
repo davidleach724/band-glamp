@@ -49,8 +49,8 @@ const AddDate = () => {
           />
         </div>
         <div className="right-form">
-          <img src={tent} className="tent"/>
-          {campSites.total != 641 && <CampSites />}
+          {campSites.total > 100 && <img src={tent} className="tent"/>}
+          {campSites.total < 100 && <CampSites campProps={campSites}/>}
         </div>
       </div>
       <img src={submitDate} className="submit-date"/>

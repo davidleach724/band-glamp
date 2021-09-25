@@ -30,6 +30,15 @@ form {
   margin-top: 25px;
 }
 
+.camp-image {
+  max-width: 60%;
+  margin-top: 25px;
+}
+
+.camp-list {
+  width: 30vw;
+}
+
 input {
   width: 20vw;
   margin: 10px;
