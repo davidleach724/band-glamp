@@ -20,7 +20,7 @@ const AddDate = () => {
   return (
     <form>
       <div className="top-form">
-        <h2>Add a Date Motha Fuckaaaa</h2>
+        <h2 className="add-a-date-header">Add a Date Motha Fuckaaaa</h2>
       </div>
       <div className="bottom-form">
         <div className="left-form">
@@ -38,6 +38,11 @@ const AddDate = () => {
             name='city'
             />          
           <StateList handleLocationChange={handleLocationChange}/>
+          <input
+            type='text'
+            placeholder='Notes'
+            name='notes'
+          />
         </div>
         <div className="right-form">
           {campSites.total != 641 && <CampSites />}
