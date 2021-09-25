@@ -9,7 +9,7 @@ export const userMockData = [
     camp_img: '',
     camp_name: '',
     camp_address: '',
-    camp_amenities: ''
+    camp_website: ''
   },
   {
     id: '02',
@@ -21,7 +21,7 @@ export const userMockData = [
     camp_img: '',
     camp_name: '',
     camp_address: '',
-    camp_amenities: ''
+    camp_website: ''
   },
   {
     id: '03',
@@ -33,7 +33,7 @@ export const userMockData = [
     camp_img: '',
     camp_name: '',
     camp_address: '',
-    camp_amenities: ''
+    camp_website: ''
   },
   {
     id: '04',
@@ -45,8 +45,8 @@ export const userMockData = [
     camp_img: '',
     camp_name: '',
     camp_address: '',
-    camp_amenities: ''
+    camp_website: ''
   }
 ]
 
-export const stateList = [ 'AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FM', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY' ]
+export const stateList = [ 'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'DE', 'DC', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY' ]

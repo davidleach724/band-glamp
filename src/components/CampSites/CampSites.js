@@ -1,3 +1,4 @@
+import CurrentCampSite from '../CurrentCampSite/CurrentCampSite'
 import { useState } from "react"
 
 const CampSites = ({campProps}) => {
@@ -16,7 +17,7 @@ const CampSites = ({campProps}) => {
 
   return (
     <div>
-      {currentSite.images != null && <img src={currentSite.images[0].url} className="camp-image"/>}
+      {currentSite.images != null && <CurrentCampSite currentSite={currentSite}/>}
       <select className="camp-list" onChange={e => handleChange(e.target.value)}>
         {campList}
       </select>
