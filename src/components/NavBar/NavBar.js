@@ -18,9 +18,6 @@ const NavBar = () => {
         <Link to="/addDate">
         <img src={ addDate } className="menu-item"></img>
         </Link>
-        <Link to="pastDates">
-        <img src={ pastDates } className="menu-item"></img>
-        </Link>
       </div>
     </nav>
   )
