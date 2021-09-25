@@ -10,7 +10,7 @@ const AddDate = () => {
   useEffect(() => {
     fetchData(location)
     .then(data => setCampSites(data))
-  }, [])
+  }, [location])
 
   const handleLocationChange = (stateAbrev) => {
     return setLocation(stateAbrev)
