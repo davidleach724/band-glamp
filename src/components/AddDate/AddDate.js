@@ -47,7 +47,18 @@ const AddDate = ({updateShows}) => {
             name='notes'
             className='notes'
           />
-          <img src={submitDate} className="submit-date" onClick={() => updateShows({id: '04'})}/>
+          <img src={submitDate} className="submit-date" onClick={() => updateShows({
+            id: '05',
+            date: '10-08-2021',
+            venue: 'The Blue Note',
+            city: 'OKC',
+            state: 'OK',
+            notes: 'Cheap drinks',
+            camp_img: '',
+            camp_name: '',
+            camp_address: '',
+            camp_website: ''
+            })}/>
         </div>
         <div className="right-form">
           {campSites.total > 100 && <img src={tent} className="tent"/>}

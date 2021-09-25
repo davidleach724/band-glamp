@@ -4,7 +4,7 @@ import SingleShow from '../SingleShow/SingleShow'
 import './CurrentTour.css'
 
 const CurrentTour = ({userMockData}) => {
-
+  console.log('userMockData', userMockData)
  const currentDates = userMockData.map(gig => {
    return (
     <SingleShow show={gig} />
