@@ -1,3 +1,4 @@
+import CampSites from '../CampSites/CampSites'
 import { useEffect, useState } from 'react'
 import { fetchData } from '../../apiCall'
 import StateList from '../StateList/StateList'
@@ -39,8 +40,10 @@ const AddDate = () => {
           <StateList handleLocationChange={handleLocationChange}/>
         </div>
         <div className="right-form">
+          {campSites.total != 641 && <CampSites />}
         </div>
       </div>
+      <button>ADD DATE</button>
 
     </form>
   )

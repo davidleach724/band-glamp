@@ -5,6 +5,10 @@ form {
   margin: 10px;
 }
 
+.bottom-form {
+  display: flex;
+}
+
 .left-form {
   display: flex;
   flex-direction: column;
