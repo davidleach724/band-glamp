@@ -2,6 +2,8 @@ import CampSites from '../CampSites/CampSites'
 import { useEffect, useState } from 'react'
 import { fetchData } from '../../apiCall'
 import StateList from '../StateList/StateList'
+import whatGig from '../../images/what-gig.png'
+import submitDate from '../../images/submit-date.png'
 import './AddDate.css'
 
 const AddDate = () => {
@@ -20,7 +22,7 @@ const AddDate = () => {
   return (
     <form>
       <div className="top-form">
-        <h2 className="add-a-date-header">Add a Date Motha Fuckaaaa</h2>
+        <img src={whatGig} className="what-gig" />
       </div>
       <div className="bottom-form">
         <div className="left-form">
@@ -48,8 +50,7 @@ const AddDate = () => {
           {campSites.total != 641 && <CampSites />}
         </div>
       </div>
-      <button>ADD DATE</button>
-
+      <img src={submitDate} className="submit-date"/>
     </form>
   )
 }

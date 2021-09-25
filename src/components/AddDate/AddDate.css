@@ -5,20 +5,20 @@ form {
   margin: 10px;
 }
 
-.add-a-date-header {
-  font-size: 4vh;
+.what-gig {
+  height: 6vh;
 }
 
 .left-form {
   display: flex;
   flex-direction: column;
   width: 35vw;
-  height: 50vh;
+  height: 45vh;
 }
 
 .right-form {
   width: 40vw;
-  height: 50vh;
+  height: 45vh;
 }
 
 input {
@@ -33,4 +33,11 @@ select {
 
 .bottom-form {
   display: flex;
+}
+
+.submit-date {
+  background-color: #E59B7F;
+  height: 4vh;
+  padding: 6px;
+  border: solid 1.5px black;
 }
