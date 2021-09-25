@@ -12,13 +12,22 @@ form {
 .left-form {
   display: flex;
   flex-direction: column;
-  width: 35vw;
+  width: 25vw;
   height: 45vh;
 }
 
+.notes {
+  height: 15vh;
+}
+
 .right-form {
-  width: 40vw;
+  width: 43vw;
   height: 45vh;
+}
+
+.tent {
+  max-width: 100%;
+  margin-top: 25px;
 }
 
 input {

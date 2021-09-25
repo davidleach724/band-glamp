@@ -4,6 +4,7 @@ import { fetchData } from '../../apiCall'
 import StateList from '../StateList/StateList'
 import whatGig from '../../images/what-gig.png'
 import submitDate from '../../images/submit-date.png'
+import tent from '../../images/tent.png'
 import './AddDate.css'
 
 const AddDate = () => {
@@ -44,9 +45,11 @@ const AddDate = () => {
             type='text'
             placeholder='Notes'
             name='notes'
+            className='notes'
           />
         </div>
         <div className="right-form">
+          <img src={tent} className="tent"/>
           {campSites.total != 641 && <CampSites />}
         </div>
       </div>
