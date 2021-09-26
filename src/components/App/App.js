@@ -18,13 +18,18 @@ const App = () => {
     setBookedShows([...bookedShows, newShow])
   }
 
+  const filterShows = (selectedID) => {
+    console.log('filterShows', selectedID)
+    return bookedShows.find(elem => elem.id === selectedID)
+  }
+
   return (
     <main className="App">
       <NavBar />
       <Switch>
         {bookedShows &&
         <Route exact path='/currentTour/' render={() => <CurrentTour userMockData={bookedShows}/>} />}
-        <Route exact path='/currentTour/:id' render={() => <ShowDetails />} />
+        <Route exact path='/currentTour/:id' render={({ match }) => <ShowDetails selectedShow={filterShows(match.params.id)}/>} />
         <Route exact path='/addDate/' render={() => <AddDate updateShows={updateShows}/>} />
       </Switch>
     </main>
