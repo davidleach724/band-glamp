@@ -3,7 +3,7 @@ import './Error.css'
 
 const Error = () => {
   return (
-    <img src={errorImg} alt="page not found" />
+    <img src={errorImg} className="page-not-found" alt="page not found" />
   )
 }
 
