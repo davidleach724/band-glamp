@@ -30,7 +30,7 @@ const AddDate = ({updateShows}) => {
   return (
     <form>
       <div className="top-form">
-        <img src={whatGig} className="what-gig" />
+        <img src={whatGig} className="what-gig" alt="what's the gig"/>
       </div>
       <div className="bottom-form">
         <div className="left-form">
@@ -60,7 +60,7 @@ const AddDate = ({updateShows}) => {
           />
           <Link to="/currentTour/">
             
-            <img src={submitDate} className="submit-date" onClick={() => 
+            <img src={submitDate} className="submit-date" alt="submit btn" onClick={() => 
               updateShows({
               id: Date.now().toString(),
               date: newShow.date,
@@ -68,7 +68,7 @@ const AddDate = ({updateShows}) => {
               city: newShow.city,
               state: location,
               notes: newShow.notes,
-              camp_img: (currentSite.images[0].url === undefined) ? '' : currentSite.images[0],
+              camp_img: (currentSite.images[0].url === undefined) ? '' : currentSite.images[0].url,
               camp_name: (currentSite.name === undefined) ? '' : currentSite.name,
               camp_address: (currentSite.addresses[0] === undefined) ? '' : currentSite.addresses[0].line1,
               camp_website: (currentSite.url === undefined) ? '' : currentSite.url
@@ -76,7 +76,7 @@ const AddDate = ({updateShows}) => {
           </Link>
         </div>
         <div className="right-form">
-          {campSites.total > 100 && <img src={tent} className="tent"/>}
+          {campSites.total > 100 && <img src={tent} alt="tent and fire sketch" className="tent"/>}
           {campSites.total < 100 && <CampSites campProps={campSites} handleCampChange={handleCampChange}/>}
         </div>
       </div>

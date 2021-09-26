@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { userMockData } from '../../dataFiles/userData'
+import React from 'react'
 import SingleShow from '../SingleShow/SingleShow'
 import './CurrentTour.css'
 
 const CurrentTour = ({userMockData}) => {
  const currentDates = userMockData.map(gig => {
    return (
-    <SingleShow show={gig} />
+    <SingleShow show={gig} key={gig.id}/>
    )
  })
 
