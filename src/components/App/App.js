@@ -15,7 +15,6 @@ const App = () => {
 
   const updateShows = (newShow) => {
     setBookedShows([...bookedShows, newShow])
-    console.log('bookedShows', bookedShows)
   }
 
   return (
