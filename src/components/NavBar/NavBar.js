@@ -10,13 +10,13 @@ const NavBar = () => {
   return (
     <nav className="nav-container">
       <div className="left-nav-menu"></div>
-      <img src={ logo } className="logo"></img>
+      <img src={ logo } className="logo" alt="band glamp logo"></img>
       <div className="right-nav-menu">
         <Link to="/currentTour">
-        <img src={ currentTour } className="menu-item"></img>
+        <img src={ currentTour } alt="current tour icon" className="menu-item"></img>
         </Link>
         <Link to="/addDate">
-        <img src={ addDate } className="menu-item"></img>
+        <img src={ addDate } alt="add a date btn" className="menu-item"></img>
         </Link>
       </div>
     </nav>
