@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import CampSites from '../CampSites/CampSites'
 import { useEffect, useState } from 'react'
 import { fetchData } from '../../apiCall'
@@ -7,9 +8,11 @@ import submitDate from '../../images/submit-date.png'
 import tent from '../../images/tent.png'
 import './AddDate.css'
 
-const AddDate = () => {
+const AddDate = ({updateShows}) => {
   const [location, setLocation] = useState('')
   const [campSites, setCampSites] = useState([])
+  const [currentSite, setCurrentSite] = useState([])
+  const [newShow, setNewShow] = useState({})
 
   useEffect(() => {
     fetchData(location)
@@ -18,6 +21,10 @@ const AddDate = () => {
 
   const handleLocationChange = (stateAbrev) => {
     return setLocation(stateAbrev)
+  }
+
+  const handleCampChange = (site) => {
+    setCurrentSite(site)
   }
 
   return (
@@ -29,16 +36,19 @@ const AddDate = () => {
         <div className="left-form">
           <input
             type='date'
+            onChange={e => setNewShow({...newShow, date: e.target.value})}
             />
           <input
             type='text'
             placeholder='Venue'
             name='venue'
+            onChange={e => setNewShow({...newShow, venue: e.target.value})}
             />
           <input
             type='text'
             placeholder='City'
             name='city'
+            onChange={e => setNewShow({...newShow, city: e.target.value})}
             />          
           <StateList handleLocationChange={handleLocationChange}/>
           <input
@@ -46,12 +56,28 @@ const AddDate = () => {
             placeholder='Notes'
             name='notes'
             className='notes'
+            onChange={e => setNewShow({...newShow, notes: e.target.value})}
           />
-          <img src={submitDate} className="submit-date"/>
+          <Link to="/currentTour/">
+            
+            <img src={submitDate} className="submit-date" onClick={() => 
+              updateShows({
+              id: '05',
+              date: newShow.date,
+              venue: newShow.venue,
+              city: newShow.city,
+              state: location,
+              notes: newShow.notes,
+              camp_img: (currentSite.images[0].url === undefined) ? '' : currentSite.images[0],
+              camp_name: (currentSite.name === undefined) ? '' : currentSite.name,
+              camp_address: (currentSite.addresses[0] === undefined) ? '' : currentSite.addresses[0].line1,
+              camp_website: (currentSite.url === undefined) ? '' : currentSite.url
+              })}/>
+          </Link>
         </div>
         <div className="right-form">
           {campSites.total > 100 && <img src={tent} className="tent"/>}
-          {campSites.total < 100 && <CampSites campProps={campSites}/>}
+          {campSites.total < 100 && <CampSites campProps={campSites} handleCampChange={handleCampChange}/>}
         </div>
       </div>
     </form>

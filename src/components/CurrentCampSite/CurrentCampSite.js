@@ -7,7 +7,8 @@ const CurrentCampSite = ({currentSite}) => {
       {currentSite.addresses[0] != null && 
           <p className="camp-address">{currentSite.addresses[0].line1} {currentSite.addresses[0].city} {currentSite.addresses[0].state}</p>}
         <p className="camp-description">{currentSite.description}</p>
-        <a href={currentSite.url}>Website</a>
+        {currentSite.url != null && 
+        <a href={currentSite.url}>Website</a>}
     </div>
   )
 }
