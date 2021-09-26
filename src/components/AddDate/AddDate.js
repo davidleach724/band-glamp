@@ -11,6 +11,7 @@ import './AddDate.css'
 const AddDate = ({updateShows}) => {
   const [location, setLocation] = useState('')
   const [campSites, setCampSites] = useState([])
+  const [currentSite, setCurrentSite] = useState([])
   const [newShow, setNewShow] = useState({})
 
   useEffect(() => {
@@ -20,6 +21,10 @@ const AddDate = ({updateShows}) => {
 
   const handleLocationChange = (stateAbrev) => {
     return setLocation(stateAbrev)
+  }
+
+  const handleCampChange = (site) => {
+    setCurrentSite(site)
   }
 
   return (
@@ -54,23 +59,25 @@ const AddDate = ({updateShows}) => {
             onChange={e => setNewShow({...newShow, notes: e.target.value})}
           />
           <Link to="/currentTour/">
-            <img src={submitDate} className="submit-date" onClick={() => updateShows({
+            
+            <img src={submitDate} className="submit-date" onClick={() => 
+              updateShows({
               id: '05',
               date: newShow.date,
               venue: newShow.venue,
               city: newShow.city,
               state: location,
               notes: newShow.notes,
-              camp_img: '',
-              camp_name: '',
+              camp_img: '' || currentSite.images[0].url,
+              camp_name: '' || currentSite.name,
               camp_address: '',
-              camp_website: ''
+              camp_website: '' || currentSite.url
               })}/>
           </Link>
         </div>
         <div className="right-form">
           {campSites.total > 100 && <img src={tent} className="tent"/>}
-          {campSites.total < 100 && <CampSites campProps={campSites}/>}
+          {campSites.total < 100 && <CampSites campProps={campSites} handleCampChange={handleCampChange}/>}
         </div>
       </div>
     </form>

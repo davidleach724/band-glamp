@@ -1,7 +1,8 @@
 import CurrentCampSite from '../CurrentCampSite/CurrentCampSite'
 import { useState } from "react"
+import { useEffect } from 'react/cjs/react.development'
 
-const CampSites = ({campProps}) => {
+const CampSites = ({campProps, handleCampChange}) => {
   const [currentSite, setCurrentSite] = useState([])
 
   const campList = campProps.data.map((site, i) => {
@@ -14,6 +15,10 @@ const CampSites = ({campProps}) => {
     let campIndex = campProps.data.indexOf(campProps.data.find(site => site.name === name))
     setCurrentSite(campProps.data[campIndex])
   }
+
+  useEffect(() => {
+    handleCampChange(currentSite)
+  }, [currentSite])
 
   return (
     <div>
