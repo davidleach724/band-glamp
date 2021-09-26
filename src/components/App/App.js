@@ -19,7 +19,6 @@ const App = () => {
   }
 
   const filterShows = (selectedID) => {
-    console.log('filterShows', selectedID)
     return bookedShows.find(elem => elem.id === selectedID)
   }
 

@@ -62,7 +62,7 @@ const AddDate = ({updateShows}) => {
             
             <img src={submitDate} className="submit-date" onClick={() => 
               updateShows({
-              id: Date.now(),
+              id: Date.now().toString(),
               date: newShow.date,
               venue: newShow.venue,
               city: newShow.city,
