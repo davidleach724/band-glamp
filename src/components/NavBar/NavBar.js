@@ -2,7 +2,6 @@ import '../NavBar/NavBar.css'
 import logo from "../../images/band-glamp-logo.png"
 import addDate from '../../images/add-date.png'
 import currentTour from '../../images/current-tour.png'
-import pastDates from '../../images/past-dates.png'
 import { Link } from 'react-router-dom'
 
 
