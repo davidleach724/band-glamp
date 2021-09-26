@@ -1,3 +1,4 @@
+import Error from '../Error/Error'
 import heresGig from '../../images/heres-the-gig.png'
 import './ShowDetails.css'
 
@@ -5,6 +6,9 @@ const ShowDetails = ({ selectedShow }) => {
 
   return (
     <div className="details-background">
+      {!selectedShow && <Error />}
+      {selectedShow != null && 
+      <>
       <div className="top-details">
         <img src={heresGig} alt="heres the gig banner" className="here-gig"/>
       </div>
@@ -18,8 +22,9 @@ const ShowDetails = ({ selectedShow }) => {
         <p>Address: {selectedShow.camp_address}</p>
         <a href={selectedShow.camp_website}>Website</a>
       </div>
+      </>}
     </div>
-  )
+    )
 }
 
 export default ShowDetails
