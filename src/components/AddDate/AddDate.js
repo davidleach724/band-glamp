@@ -68,10 +68,10 @@ const AddDate = ({updateShows}) => {
               city: newShow.city,
               state: location,
               notes: newShow.notes,
-              camp_img: '' || currentSite.images[0].url,
-              camp_name: '' || currentSite.name,
-              camp_address: '',
-              camp_website: '' || currentSite.url
+              camp_img: (currentSite.images[0].url === undefined) ? '' : currentSite.images[0],
+              camp_name: (currentSite.name === undefined) ? '' : currentSite.name,
+              camp_address: (currentSite.addresses[0] === undefined) ? '' : currentSite.addresses[0].line1,
+              camp_website: (currentSite.url === undefined) ? '' : currentSite.url
               })}/>
           </Link>
         </div>
