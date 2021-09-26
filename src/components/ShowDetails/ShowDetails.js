@@ -12,7 +12,7 @@ const ShowDetails = ({ selectedShow }) => {
         <p>Date: {selectedShow.date}</p>
         <p>Venue: {selectedShow.venue}</p>
         <p>{selectedShow.city}, {selectedShow.state}</p>
-        <p>Notes: {selectedShow.notes}</p>
+        <p>{selectedShow.notes}</p>
         <img src={selectedShow.camp_img.url} className="camp-img"/>
         <p>Campsite: {selectedShow.camp_name}</p>
         <p>Address: {selectedShow.camp_address}</p>
