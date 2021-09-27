@@ -1,6 +1,6 @@
 {
   "name": "band-glamp",
-  "homepage": "/currentTour/",
+  "homepage": "http://daveleach724.github.io/band-glamp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +20,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cypress": "./node_modules/.bin/cypress open"
+    "cypress": "./node_modules/.bin/cypress open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^8.4.1"
+    "cypress": "^8.4.1",
+    "gh-pages": "^3.2.3"
   }
 }
