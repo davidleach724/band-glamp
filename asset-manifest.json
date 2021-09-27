@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/band-glamp/static/css/main.251a8dc9.chunk.css",
-    "main.js": "/band-glamp/static/js/main.27199f21.chunk.js",
-    "main.js.map": "/band-glamp/static/js/main.27199f21.chunk.js.map",
+    "main.css": "/band-glamp/static/css/main.56f310c1.chunk.css",
+    "main.js": "/band-glamp/static/js/main.a7521df3.chunk.js",
+    "main.js.map": "/band-glamp/static/js/main.a7521df3.chunk.js.map",
     "runtime-main.js": "/band-glamp/static/js/runtime-main.1e8e7c46.js",
     "runtime-main.js.map": "/band-glamp/static/js/runtime-main.1e8e7c46.js.map",
     "static/js/2.08c786b7.chunk.js": "/band-glamp/static/js/2.08c786b7.chunk.js",
     "static/js/2.08c786b7.chunk.js.map": "/band-glamp/static/js/2.08c786b7.chunk.js.map",
     "index.html": "/band-glamp/index.html",
-    "static/css/main.251a8dc9.chunk.css.map": "/band-glamp/static/css/main.251a8dc9.chunk.css.map",
+    "static/css/main.56f310c1.chunk.css.map": "/band-glamp/static/css/main.56f310c1.chunk.css.map",
     "static/js/2.08c786b7.chunk.js.LICENSE.txt": "/band-glamp/static/js/2.08c786b7.chunk.js.LICENSE.txt",
     "static/media/band-glamp-logo.3af7fd2a.png": "/band-glamp/static/media/band-glamp-logo.3af7fd2a.png",
     "static/media/pagenotfound.c5bd9b6a.png": "/band-glamp/static/media/pagenotfound.c5bd9b6a.png",
     "static/media/tent.e5192d1a.png": "/band-glamp/static/media/tent.e5192d1a.png",
-    "static/media/welcome.f3839da5.png": "/band-glamp/static/media/welcome.f3839da5.png"
+    "static/media/welcome-text.67aff444.png": "/band-glamp/static/media/welcome-text.67aff444.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1e8e7c46.js",
     "static/js/2.08c786b7.chunk.js",
-    "static/css/main.251a8dc9.chunk.css",
-    "static/js/main.27199f21.chunk.js"
+    "static/css/main.56f310c1.chunk.css",
+    "static/js/main.a7521df3.chunk.js"
   ]
 }
