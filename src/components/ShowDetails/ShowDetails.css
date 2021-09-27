@@ -12,3 +12,12 @@
 .camp-img {
   width: 40%;
 }
+
+.current-tour-btn {
+  background-color: #E59B7F;
+  margin: 25px;
+  height: auto;
+  width: 25%;
+  padding: 6px;
+  border: solid 1.5px black;
+}

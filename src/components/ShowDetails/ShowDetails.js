@@ -1,6 +1,8 @@
 import Error from '../Error/Error'
 import heresGig from '../../images/heres-the-gig.png'
+import currentTour from '../../images/current-tour.png'
 import './ShowDetails.css'
+import { Link } from 'react-router-dom'
 
 const ShowDetails = ({ selectedShow }) => {
 
@@ -22,6 +24,9 @@ const ShowDetails = ({ selectedShow }) => {
         <p>Address: {selectedShow.camp_address}</p>
         <a href={selectedShow.camp_website}>Website</a>
       </div>
+      <Link to="/currentTour">
+        <img src={currentTour} alt="Go to current tour" className="current-tour-btn" />
+      </Link>
       </>}
     </div>
     )
