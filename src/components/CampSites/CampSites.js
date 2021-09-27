@@ -1,6 +1,5 @@
 import CurrentCampSite from '../CurrentCampSite/CurrentCampSite'
-import { useState } from "react"
-import { useEffect } from 'react/cjs/react.development'
+import { useState, useEffect } from "react"
 
 const CampSites = ({campProps, handleCampChange}) => {
   const [currentSite, setCurrentSite] = useState([])
