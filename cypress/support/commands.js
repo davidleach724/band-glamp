@@ -9,7 +9,7 @@
 // ***********************************************
 //
 //
-Cypress.Commabds.add('getCampSites', (state) => {
+Cypress.Commands.add('getCampSites', (state) => {
   cy.intercept('GET', `https://developer.nps.gov/api/v1/campgrounds?stateCode=${state}&stateCode=&api_key=kGRSkY3I2AvcvPikhDRpuyEsUnHxuN47p5n912Pj`, {
     body: {
       total: "1",
