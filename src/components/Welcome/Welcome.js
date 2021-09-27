@@ -1,4 +1,4 @@
-import welcomeLogo from '../../images/welcome.png'
+import welcomeLogo from '../../images/welcome-text.png'
 import './Welcome.css'
 
 const Welcome = () => {
