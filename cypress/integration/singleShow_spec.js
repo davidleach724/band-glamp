@@ -1,0 +1,20 @@
+beforeEach(() => {
+  cy.visit('http://localhost:3000/currentTour/01')
+})
+
+it('should display selected show information', () => {
+  cy.get('.bottom-details > :nth-child(1)')
+  .contains('2021-10-02')
+  cy.get('.bottom-details > :nth-child(2)')
+  .contains('Levitt Pavillion')
+  cy.get('.bottom-details > :nth-child(3)')
+  .contains('Denver, CO')
+  cy.get('.bottom-details > :nth-child(4)')
+  .contains('Outdoor show, food provided')
+  cy.get('.camp-img')
+  cy.get('.bottom-details > :nth-child(6)')
+  .contains('Campsite: Piñon Flats Campground')
+  cy.get('.bottom-details > :nth-child(7)')
+  .contains('Address')
+  cy.get('.bottom-details > a')
+})
