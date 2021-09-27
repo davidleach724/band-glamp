@@ -28,7 +28,7 @@ const App = () => {
     <main className="App">
       <NavBar />
       <Switch>
-        <Route exact path='/' component={ Welcome } />
+        <Route exact path='/band-glamp' component={ Welcome } />
         {bookedShows &&
         <Route exact path='/currentTour/' render={() => <CurrentTour userMockData={bookedShows}/>} />}
         <Route exact path='/currentTour/:id' render={({ match }) => <ShowDetails selectedShow={filterShows(match.params.id)}/>} />
