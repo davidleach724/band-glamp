@@ -19,6 +19,7 @@ it('should load camps when a state is selected', () => {
   cy.get('select')
   .select('OK')
   cy.get('.camp-list')
+  .select('Buckhorn Campground Loop A')
 })
 
 it('it should add a show when filled out and submitted', () => {
