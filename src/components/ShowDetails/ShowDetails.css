@@ -9,6 +9,27 @@
   height: 6vh;
 }
 
+.here-camp {
+  height: 6vh;
+  margin-top: 14px;
+}
+
 .camp-img {
   width: 40%;
+}
+
+.bottom-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-tour-btn {
+  background-color: #E59B7F;
+  margin: 25px;
+  height: auto;
+  width: 25%;
+  padding: 6px;
+  border: solid 1.5px black;
 }
