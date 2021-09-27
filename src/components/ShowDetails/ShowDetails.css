@@ -9,8 +9,20 @@
   height: 6vh;
 }
 
+.here-camp {
+  height: 6vh;
+  margin-top: 14px;
+}
+
 .camp-img {
   width: 40%;
+}
+
+.bottom-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .current-tour-btn {
