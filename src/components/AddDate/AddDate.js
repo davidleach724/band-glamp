@@ -27,6 +27,27 @@ const AddDate = ({updateShows}) => {
     setCurrentSite(site)
   }
 
+  const validateShows = () => {
+    if (currentSite.length < 1) {
+      console.log(currentSite)
+      {alert('please enter all information')}
+      return
+    } else {
+      updateShows({
+        id: Date.now().toString(),
+        date: newShow.date,
+        venue: newShow.venue,
+        city: newShow.city,
+        state: location,
+        notes: newShow.notes,
+        camp_img: (currentSite.images[0].url === undefined) ? '' : currentSite.images[0].url,
+        camp_name: (currentSite.name === undefined) ? '' : currentSite.name,
+        camp_address: (currentSite.addresses[0] === undefined) ? '' : currentSite.addresses[0].line1,
+        camp_website: (currentSite.url === undefined) ? '' : currentSite.url
+      })
+    }
+  }
+
   return (
     <form>
       <div className="top-form">
@@ -59,20 +80,9 @@ const AddDate = ({updateShows}) => {
             onChange={e => setNewShow({...newShow, notes: e.target.value})}
           />
           <Link to="/currentTour/">
-            
             <img src={submitDate} className="submit-date" alt="submit btn" onClick={() => 
-              updateShows({
-              id: Date.now().toString(),
-              date: newShow.date,
-              venue: newShow.venue,
-              city: newShow.city,
-              state: location,
-              notes: newShow.notes,
-              camp_img: (currentSite.images[0].url === undefined) ? '' : currentSite.images[0].url,
-              camp_name: (currentSite.name === undefined) ? '' : currentSite.name,
-              camp_address: (currentSite.addresses[0] === undefined) ? '' : currentSite.addresses[0].line1,
-              camp_website: (currentSite.url === undefined) ? '' : currentSite.url
-              })}/>
+              validateShows()
+              }/>
           </Link>
         </div>
         <div className="right-form">
