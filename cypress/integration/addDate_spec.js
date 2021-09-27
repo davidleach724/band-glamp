@@ -61,3 +61,11 @@ it('it should display the added show after properly submitting it', () => {
   cy.get('section')
   .contains('Tulsa')
 })
+
+it('should alert the user if not all information is populated', () => {
+  cy.get('.submit-date')
+  .click()
+  cy.on('window:alert', (str) => {
+    expect(str).to.equal(`please enter all information`)
+  })
+})
