@@ -7,6 +7,7 @@ import ShowDetails from '../ShowDetails/ShowDetails';
 import Error from '../Error/Error';
 import { userMockData } from '../../dataFiles/userData'
 import './App.css';
+import Welcome from '../Welcome/Welcome';
 
 const App = () => {
   const [bookedShows, setBookedShows] = useState([])
@@ -27,6 +28,7 @@ const App = () => {
     <main className="App">
       <NavBar />
       <Switch>
+        <Route exact path='/' component={ Welcome } />
         {bookedShows &&
         <Route exact path='/currentTour/' render={() => <CurrentTour userMockData={bookedShows}/>} />}
         <Route exact path='/currentTour/:id' render={({ match }) => <ShowDetails selectedShow={filterShows(match.params.id)}/>} />

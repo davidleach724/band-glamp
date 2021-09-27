@@ -1,6 +1,5 @@
 {
   "name": "band-glamp",
-  "homepage": "http://daveleach724.github.io/band-glamp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
