@@ -29,7 +29,6 @@ const AddDate = ({updateShows}) => {
 
   const validateShows = () => {
     if (currentSite.length < 1) {
-      console.log(currentSite)
       {alert('please enter all information')}
       return
     } else {
