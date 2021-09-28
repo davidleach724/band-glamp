@@ -11,11 +11,12 @@ Tired of trying to get ahold of your tour manager while you're on the road and t
 - React
 - React Hooks
 - React Router
+- Asynchronous JavaScript
 - Javascript
 - CSS/SCSS
 - REST API
 - Cypress Testing
-- Adobe Photoshop
+- End to end testing with Cypress
 
 
 ## See it in action
