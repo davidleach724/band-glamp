@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Band Glamp - Artist Tour Agenda
+Mod 3 FE Showcase Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [View the Deployed Application](https://davidleach724.github.io/band-glamp/)
 
-## Available Scripts
+## Overview
+Tired of trying to get ahold of your tour manager while you're on the road and they're back at home enjoying a nice dinner with their family and all you want to know is where you're playing and if there is enough gas in the mini-van to get you there?? Band Glamp solves the problems of juggling different emails to find out important gig and lodging information by compiling all the data in one spot! This application allows the artist to add gig info and also search nearby National Park Campsites so that THEY TOO can enjoy a temporary glamping vacation.
 
-In the project directory, you can run:
 
-### `npm start`
+## Technologies
+- React
+- React Hooks
+- React Router
+- Javascript
+- CSS/SCSS
+- REST API
+- Cypress Testing
+- Adobe Photoshop
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## See it in action
+#### Welcome Menu
+![BandGlamp_Welcome](https://user-images.githubusercontent.com/81774070/135008772-757b258b-92bc-4e42-a8eb-c37a96d85141.gif)
 
-### `npm test`
+#### Viewing Current Shows
+![BandGlamp_SingleShow](https://user-images.githubusercontent.com/81774070/135008791-6023878b-6f87-4599-862e-4be2ee057168.gif)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Adding a New Show
+![BandGlamp_AddShow](https://user-images.githubusercontent.com/81774070/135008803-214390ed-3a99-4d3a-8181-ce1957df6aa8.gif)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation + Setup
+- Clone the [Repo](https://github.com/davidleach724/band-glamp) to your local machine
+- Run 'npm install'
+- Run 'npm start' in both the api directory AS WELL AS the travel tracker directory to run the website
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Contributors
+- [Dave Leach](https://github.com/davidleach724)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project Managers
+- [Scott Ertmer](https://github.com/sertmer)
+- [Kayla Gordon](https://github.com/kaylagordon)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Wins & Challenges
+- Creating a project that utilizes functional components and React Hooks 
+- Building an application that incorporates fetching data with a public API
+- Dynamically creating a dropdown menu with user-selected fetched data
+- Designing and manipulating hand-drawn graphics
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Future Add-ons
+- The ability to edit/remove show information
+- Add nearby hiking routes
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Specs
+- The project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-3/showcase.html)
