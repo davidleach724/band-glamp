@@ -1,4 +1,4 @@
-# Band Glamp - Artist Tour Agenda
+# Band Glamp - Artist Show & Lodging Management
 Mod 3 FE Showcase Project
 
 ## [View the Deployed Application](https://davidleach724.github.io/band-glamp/)
