@@ -16,7 +16,6 @@ Tired of trying to get ahold of your tour manager while you're on the road and t
 - CSS/SCSS
 - REST API
 - Cypress Testing
-- End to end testing with Cypress
 
 
 ## See it in action
@@ -34,7 +33,7 @@ Tired of trying to get ahold of your tour manager while you're on the road and t
 ## Installation + Setup
 - Clone the [Repo](https://github.com/davidleach724/band-glamp) to your local machine
 - Run 'npm install'
-- Run 'npm start' in both the api directory AS WELL AS the travel tracker directory to run the website
+- Run 'npm start'
 
 
 ## Contributors
